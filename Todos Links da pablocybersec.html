@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pablo Cyber Sec — Canais Oficiais</title>
+<meta name="description" content="Portfólio, aulas, YouTube, TryHackMe e todos os canais oficiais de Pablo Cyber Sec.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+<style>
+  :root{
+    --bg: #0b0f0e;
+    --surface: #121715;
+    --surface-2: #171d1a;
+    --line: #263029;
+    --text: #e7ede9;
+    --muted: #8ea095;
+    --amber: #e2a23b;
+    --teal: #4fb3a3;
+    --amber-dim: #6b5326;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:
+      radial-gradient(ellipse 900px 500px at 15% -10%, rgba(79,179,163,0.08), transparent),
+      radial-gradient(ellipse 700px 500px at 100% 10%, rgba(226,162,59,0.06), transparent),
+      var(--bg);
+    color:var(--text);
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:32px 18px;
+    line-height:1.5;
+  }
+  @font-face{
+    font-family: 'local-mono-fallback';
+    src: local('IBM Plex Mono'), local('JetBrains Mono'), local('Menlo');
+  }
+  .mono{
+    font-family: "IBM Plex Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+
+  .wrap{
+    width:100%;
+    max-width:640px;
+  }
+
+  .term{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow: 0 40px 80px -30px rgba(0,0,0,0.6);
+  }
+  .term-bar{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:11px 14px;
+    background:var(--surface-2);
+    border-bottom:1px solid var(--line);
+  }
+  .dot{width:10px;height:10px;border-radius:50%;background:#3a453f;}
+  .term-title{
+    margin-left:8px;
+    font-size:12.5px;
+    color:var(--muted);
+    letter-spacing:0.01em;
+  }
+
+  .term-body{
+    padding:26px 26px 22px;
+  }
+
+  .boot{
+    color:var(--muted);
+    font-size:13px;
+    margin:0 0 18px;
+  }
+  .boot .ok{color:var(--teal);}
+
+  .prompt-line{
+    display:flex;
+    gap:10px;
+    font-size:14.5px;
+    margin-bottom:4px;
+  }
+  .prompt-line .sym{color:var(--amber); flex-shrink:0;}
+
+  h1{
+    font-size:22px;
+    margin:6px 0 2px;
+    font-weight:600;
+    letter-spacing:-0.01em;
+  }
+  .role{
+    color:var(--muted);
+    font-size:14px;
+    margin:0 0 22px;
+  }
+
+  .divider{
+    border:none;
+    border-top:1px dashed var(--line);
+    margin:22px 0;
+  }
+
+  .links{
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+  }
+
+  .link-row{
+    display:grid;
+    grid-template-columns: 20px 1fr auto;
+    align-items:baseline;
+    gap:12px;
+    padding:12px 10px;
+    border-radius:6px;
+    text-decoration:none;
+    color:var(--text);
+    transition: background 0.15s ease, padding-left 0.15s ease;
+  }
+  .link-row:hover{
+    background:var(--surface-2);
+  }
+  .link-row .icon{
+    font-size:15px;
+    line-height:1;
+  }
+  .link-row .label{
+    font-weight:500;
+    font-size:15px;
+  }
+  .link-row .sub{
+    display:block;
+    font-size:12.5px;
+    color:var(--muted);
+    margin-top:2px;
+    font-weight:400;
+  }
+  .link-row .go{
+    color:var(--amber);
+    font-size:13px;
+    opacity:0;
+    transition:opacity 0.15s ease;
+  }
+  .link-row:hover .go{opacity:1;}
+  .link-row.soon{
+    opacity:0.55;
+    pointer-events:none;
+  }
+  .link-row.soon .go{
+    opacity:1;
+    color:var(--muted);
+  }
+
+  footer{
+    margin-top:24px;
+    text-align:center;
+    color:var(--muted);
+    font-size:12.5px;
+  }
+  footer a{color:var(--teal); text-decoration:none;}
+  footer a:hover{text-decoration:underline;}
+
+  .cursor{
+    display:inline-block;
+    width:7px;
+    height:14px;
+    background:var(--amber);
+    margin-left:2px;
+    animation: blink 1s steps(1) infinite;
+    vertical-align:middle;
+  }
+  @keyframes blink{
+    50%{opacity:0;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .cursor{animation:none;}
+  }
+
+  @media (max-width:480px){
+    .term-body{padding:20px 16px 16px;}
+    h1{font-size:19px;}
+    .link-row{grid-template-columns: 18px 1fr;}
+    .link-row .go{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="term">
+    <div class="term-bar">
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      <span class="term-title mono">pablocybersec — bash — 80×24</span>
+    </div>
+
+    <div class="term-body">
+      <p class="boot mono">
+        iniciando sessão... <span class="ok">[ok]</span><br>
+        carregando canais oficiais... <span class="ok">[ok]</span>
+      </p>
+
+      <div class="prompt-line mono">
+        <span class="sym">$</span>
+        <span>whoami<span class="cursor"></span></span>
+      </div>
+
+      <h1>Pablo Cyber Sec</h1>
+      <p class="role">Cibersegurança · Ethical Hacking · Pentest — labs, aulas e conteúdo prático</p>
+
+      <hr class="divider">
+
+      <div class="links">
+        <a class="link-row" href="https://deepaudit.github.io/pablocybersec/" target="_blank" rel="noopener">
+          <span class="icon">🌐</span>
+          <span>
+            <span class="label">Portfólio Profissional</span>
+            <span class="sub">Deep Audit — projetos e writeups</span>
+          </span>
+          <span class="go mono">abrir →</span>
+        </a>
+
+        <a class="link-row" href="https://www.superprof.com.br/pablo-cyber-sec-formacao-completa-ethical-hacking-pentest-cyberseguranca-zero-avancado.html" target="_blank" rel="noopener">
+          <span class="icon">📚</span>
+          <span>
+            <span class="label">Superprof</span>
+            <span class="sub">Aulas particulares e formação completa</span>
+          </span>
+          <span class="go mono">abrir →</span>
+        </a>
+
+        <a class="link-row" href="https://www.youtube.com/@Pablocyberoficial" target="_blank" rel="noopener">
+          <span class="icon">📺</span>
+          <span>
+            <span class="label">YouTube Oficial</span>
+            <span class="sub">Vídeos, tutoriais e labs</span>
+          </span>
+          <span class="go mono">abrir →</span>
+        </a>
+
+        <a class="link-row" href="https://www.linkedin.com/in/pablocyber" target="_blank" rel="noopener">
+          <span class="icon">💼</span>
+          <span>
+            <span class="label">LinkedIn</span>
+            <span class="sub">Rede profissional</span>
+          </span>
+          <span class="go mono">abrir →</span>
+        </a>
+
+        <a class="link-row" href="https://tryhackme.com/p/pablocybersec" target="_blank" rel="noopener">
+          <span class="icon">💻</span>
+          <span>
+            <span class="label">TryHackMe</span>
+            <span class="sub">Laboratório e prática hands-on</span>
+          </span>
+          <span class="go mono">abrir →</span>
+        </a>
+
+        <a class="link-row soon" href="https://pablodigital.shop/" target="_blank" rel="noopener">
+          <span class="icon">🛒</span>
+          <span>
+            <span class="label">Pablo Cyber Shop</span>
+            <span class="sub">Loja oficial</span>
+          </span>
+          <span class="go mono">em breve</span>
+        </a>
+
+        <a class="link-row" href="https://www.duolingo.com/profile/Pablo-Cyber-sec" target="_blank" rel="noopener">
+          <span class="icon">🌍</span>
+          <span>
+            <span class="label">Duolingo</span>
+            <span class="sub">Rotina de idiomas</span>
+          </span>
+          <span class="go mono">abrir →</span>
+        </a>
+
+        <a class="link-row" href="mailto:contatopablocyberoficial@gmail.com">
+          <span class="icon">📧</span>
+          <span>
+            <span class="label">E-mail de Contato</span>
+            <span class="sub">contatopablocyberoficial@gmail.com</span>
+          </span>
+          <span class="go mono">escrever →</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="mono">
+    connection secured 🔒 — dúvidas? <a href="mailto:contatopablocyberoficial@gmail.com">fale comigo</a>
+  </footer>
+</div>
+
+</body>
+</html>
