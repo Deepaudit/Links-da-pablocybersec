@@ -18,12 +18,6 @@ Página única (link hub) com todos os canais oficiais de Pablo Cyber Sec: portf
 | 🌍 Duolingo | https://www.duolingo.com/profile/Pablo-Cyber-sec |
 | 📧 E-mail | contatopablocyberoficial@gmail.com |
 
-## Como publicar no GitHub Pages
-
-1. Suba o arquivo `index.html` (e este `README.md`) para a raiz do repositório.
-2. Vá em **Settings → Pages**.
-3. Em **Source**, selecione a branch `main` e a pasta `/root`.
-4. Salve e aguarde alguns minutos — o link ficará em `https://<seu-usuario>.github.io/<nome-do-repositorio>/`.
 
 ## Estrutura do projeto
 
