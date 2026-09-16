@@ -2,7 +2,7 @@
 
 Página única (link hub) com todos os canais oficiais de Pablo Cyber Sec: portfólio, aulas, YouTube, redes e laboratórios de prática em cibersegurança.
 
-🔗 **Acesse a página publicada:** `https://<seu-usuario>.github.io/<nome-do-repositorio>/`
+🔗 **Acesse a página publicada:** `https://deepaudit.github.io/Links-da-pablocybersec/`
 *(atualize o link acima depois de publicar no GitHub Pages)*
 
 ## Canais
